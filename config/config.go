@@ -13,6 +13,13 @@ type Config struct {
 	RegisteTemp  int
 	ExpireMinute string
 	Phone        string
+	Workers      []Worker
+}
+
+type Worker struct {
+	Url      string
+	Name     string
+	HashFile string
 }
 
 var (
